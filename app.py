@@ -192,7 +192,7 @@ app.layout = html.Div(
                                   main_panel_layout,
                                   dcc.Interval(
                                               id = 'interval-component',
-                                              interval = 1*120000,
+                                              interval = 1*3600000,
                                               n_intervals = 0
                                               ),
                                   ],
