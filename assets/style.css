@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
+body {
+  background-color: #1e1e1e;
+  color: #f3f6fa;
+  margin: 0,
+  padding: 0,
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+#interval {
+  display: none;
+}
+
+#side-panel {
+  padding: 6rem 3rem 7rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  background-color: #2b2b2b;
+  flex: 1 16%;
+  margin: 0 rem -0.4rem;
+}
+
+#country-dropdown-text {
+  color: #fec036;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  word-break: normal;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: white !important;
+    cursor: pointer;
+    text-align: left;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+#country-dropdown:hover, #country-dropdown .Select:hover {
+    cursor: pointer;
+}
+
+#country-dropdown {
+    width: 100%;
+}
+
+.Select-control, .Select-multi-value-wrapper, .Select-menu-outer div {
+    background-color: #2b2b2b;
+}
+
+.Select-control, .Select, .Select-value-label, .Select-clear-zone {
+    color: white;
+}
+
+.Select-menu-outer {
+    background-color: #2b2b2b;
+    border: 0.5px solid gray !important;
+}
+
+.Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+.Select-arrow {
+    border-color: gray transparent transparent;
+}
+
+.Select-arrow-zone, .Select-clear-zone, .is-open > .Select-control {
+    background-color: #2b2b2b !important;
+}
+
+#country-dropdown-component {
+    color: #0f0f0f;
+    text-align: center;
+    cursor: pointer;
+}
+
+#upper-lower-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 5 84%;
+    padding: 0rem 1rem;
+    margin-top:-1rem;
+    margin-bottom: -1rem;
+}
+
+#dashboard-header {
+  display: flex;
+  color: #fec036;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  word-break: normal;
+  margin-top: -1rem 0rem;
+  padding: 0rem 0rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#aqi-scale {
+  max-width: 100%;
+}
+
+
+#folium-map-wrapper {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 59.75%;
+}
+
+#folium-map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#folium-map-wrapper .sc-bdVaJa.fsmTNM, .sc-bdVaJa.bQWqnK {
+    background-color: #1e1e1e;
+}
+
+#folium-map-wrapper .sc-bxivhb.iArJfC, .sc-bxivhb.cmSQpo {
+    background-color: #2b2b2b;
+}
+
+.sc-ifAKCX.dlqMgb, .sc-ifAKCX.dlqMgb:hover, .sc-ifAKCX.igrnnx, .sc-ifAKCX.igrnnx:hover {
+    background-color: #fec036;
+    border-color: #fec036;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #root {
+	flex-direction: column;
+    }
+
+    #side-panel {
+        padding: 1rem 1rem 1rem 1rem;
+	display: flex;
+  	flex-direction: column;
+  	background-color: #2b2b2b;
+    }
+    #country-dropdown-text {
+        text-align: center;
+	font-size: 1.5rem;
+    }
+
+    #country-dropdown-component {
+        font-size: 0.8rem !important;
+    }
+    
+    #aqi-summary {
+	display: flex;
+	transform: scale(0.75, 0.75);
+        flex-direction: row;
+	justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 900px;
+    }
+
+    #upper-lower-panel {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+
+    #dashboard-title {
+        color: #fec036;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        word-break: normal;
+        padding: 0rem -2rem;
+        font-size: 0.9rem;
+      }
+}
