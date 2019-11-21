@@ -120,6 +120,17 @@ body {
   flex-wrap: wrap;
 }
 
+#dashboard-title {
+  display: flex;
+  color: #fec036;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  word-break: normal;
+  margin-top: -1rem 0rem;
+  padding: 0rem 0rem;
+}
+
 #aqi-scale {
   max-width: 100%;
 }
