@@ -54,6 +54,6 @@ Now, it all comes down to Dash and how, I uses various dash componnents to put t
 
 We also make use of [dash-daq components](https://dash.plot.ly/dash-daq) to add elements like LEDDisplay for time, etc.
 
-We'll see how to upload the project to GitHub and then use Heroku to deploy the code hosted on GitHub. I'll try to post 2 separate articles and link them here to show exactly hoe to accomplish these tasks.
+We'll see how to upload the project to GitHub and then use Heroku to deploy the code hosted on GitHub. I'll try to post 2 separate articles and link them here to show exactly how to accomplish these tasks.
 
 Cheers!
