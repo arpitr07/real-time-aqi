@@ -4,7 +4,7 @@ reverse_geocoder==1.5.1
 numpy==1.15.4
 dash_daq==0.3.0
 dash_core_components==1.5.0
-requests==2.21.0
+requests==2.31.0
 pandas==0.23.4
 folium==0.10.0
 python-dotenv==0.10.3
